@@ -22,6 +22,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
+      - run: npm install --save-dev eslint
       - run: npm install
       - run: npm test
   deploy:
